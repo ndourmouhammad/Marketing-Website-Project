@@ -1,59 +1,55 @@
-# MarketingWebsite
+# Marketing Website Project 🚀
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
+Ce projet consiste à créer un site marketing interactif pour un produit technologique, développé avec Angular. Le site met en valeur les caractéristiques du produit, facilite l'inscription des utilisateurs et permet de contacter facilement l'équipe de vente.
 
-## Development server
+## 🖍 Fonctionnalités
+- **Page d'accueil** : Présentation du produit avec des visuels et un aperçu général.  
+- **Pages de fonctionnalités** : Description détaillée des fonctionnalités du produit.  
+- **Landing page** : Une page optimisée pour inciter les utilisateurs à s'inscrire.  
+- **Formulaires interactifs** :  
+  - Formulaire d'inscription.  
+  - Formulaire de contact pour se connecter à l'équipe commerciale.  
+- **Appels à l'action** : Lien "Contactez-nous" accessible sur toutes les pages pour améliorer l'engagement.  
 
-To start a local development server, run:
+## 🔧 Technologies utilisées
+- **Framework Frontend** : Angular19  
+- **Framework CSS** : TailwindCSS  
+- **Langages** : TypeScript, HTML, CSS  
+- **Design** : Utilisation de principes modernes pour un design responsive et intuitif avec TailwindCSS.
 
-```bash
-ng serve
-```
+## 🌟 Objectifs
+- Promouvoir un produit technologique via un site web moderne.  
+- Simplifier les interactions utilisateur grâce à des formulaires et des appels à l'action clairs.  
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📅 Planning
+- Développement du projet du 07/02/2025 au 08/02/2025.  
+- Finalisation et tests avant la livraison le 08/02/2025.  
 
-## Code scaffolding
+## 💻 Démo
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+## 📂 Installation et exécution
+1. Clonez ce dépôt :  
+   ```bash
+   git clone https://github.com/ton-utilisateur/marketing-website-angular.git
+   ```
+2. Accédez au dossier :  
+   ```bash
+   cd marketing-website-angular
+   ```
+3. Installez les dépendances :  
+   ```bash
+   npm install
+   ```
+4. Démarrez le serveur de développement :  
+   ```bash
+   ng serve
+   ```
+5. Ouvrez le site dans votre navigateur :  
+   ```plaintext
+   http://localhost:4200
+   ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📌 Auteur
+Développé par Mouhammad Ndour 🌍 Sénégal.  
+[Contactez-moi](mailto:ndourmouhammad15@gmail.com) pour toute question ou collaboration !
