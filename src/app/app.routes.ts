@@ -6,9 +6,9 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 export const routes: Routes = [
-  { path: '', component: HomepageComponent },
+  { path: 'home', component: HomepageComponent },
   { path: 'features', component: FeatureComponent },
-  { path: 'landing', component: LandingPageComponent },
+  { path: '', component: LandingPageComponent },
   { path: 'contact', component: ContactPageComponent },
   { path: '**', component: NotFoundComponent },
 ];

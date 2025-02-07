@@ -1,1 +1,44 @@
-<p>homepage works!</p>
+<!-- Hero Section -->
+<div class="h-96 md:h-[450px] bg-cover bg-center flex items-center justify-center relative"
+  style="background-image: url('https://images.unsplash.com/photo-1580629423979-3bf97b4f0e76?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+
+  <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
+
+  <h1 class="text-3xl md:text-5xl font-bold text-white px-6 py-3 rounded-lg backdrop-blur-lg bg-white/10 shadow-lg relative z-10 text-center">
+    Découvrez les Merveilles du Sénégal
+  </h1>
+</div>
+
+
+<div class="container mx-auto px-6 md:px-12 mb-5">
+  <!-- Section des paragraphes -->
+  <div class="my-8 text-center">
+    <p class="text-lg md:text-xl text-gray-800 font-medium max-w-3xl mx-auto bg-blue-100 px-6 py-4 rounded-lg shadow-md">
+      Explorez les sites touristiques cachés, connectez-vous avec des guides locaux et vivez une expérience inoubliable.
+    </p>
+  </div>
+
+  <!-- Section des fonctionnalités -->
+  <!-- Section des fonctionnalités -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center my-12">
+  <div *ngFor="let feature of features" class="flex flex-col items-center">
+    <div class="w-72 h-48 md:w-80 md:h-52 overflow-hidden rounded-lg shadow-lg">
+      <img class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+           [src]="feature.image"
+           [alt]="feature.title">
+    </div>
+    <p class="mt-4 font-bold text-xl text-blue-700">{{ feature.title }}</p>
+    <p class="text-sm mt-2 text-gray-600 max-w-xs">
+      {{ feature.description }}
+    </p>
+  </div>
+</div>
+
+
+  <!-- Bouton -->
+  <div class="text-center mt-12">
+    <button routerLink="/contact" cursor="pointer" class="bg-gradient-to-r from-blue-700 to-blue-900 text-white font-bold py-3 px-8 rounded-lg hover:from-blue-800 hover:to-blue-950 transition duration-300 transform hover:scale-105 shadow-md">
+      Contactez-nous
+    </button>
+  </div>
+</div>
