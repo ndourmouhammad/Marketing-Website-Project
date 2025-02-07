@@ -1,1 +1,30 @@
-<p>feature works!</p>
+<!-- Hero Section -->
+<div class="h-96 md:h-[450px] bg-cover bg-center flex items-center justify-center relative"
+  style="background-image: url('https://img.freepik.com/photos-gratuite/jeune-femme-afro-americaine-chapeau-valise_185193-161755.jpg?t=st=1738930266~exp=1738933866~hmac=19a1c60b2e171f7d6dd7b377b70a3380dce4c98b104408996c3e7c4174fea93b&w=1380');">
+
+  <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
+
+  <h1 class="text-3xl md:text-5xl font-bold text-white px-6 py-3 rounded-lg backdrop-blur-lg bg-white/10 shadow-lg relative z-10 text-center">
+    Nos panoplies de services
+  </h1>
+</div>
+
+<!-- Section liste des fonctionnalités -->
+<section class="container mx-auto px-6 md:px-12 mb-5">
+  <h1 class="text-3xl md:text-5xl font-bold text-gray-800 my-10 text-center">Liste des services</h1>
+  <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    <div *ngFor="let feature of fonctionnalites" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition">
+      <p routerLink="/services" class="block">
+        <img [src]="feature.image" [alt]="feature.titre" class="w-full h-48 object-cover rounded-t-lg" />
+      </p>
+      <div class="p-5">
+        
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ feature.titre }}</h5>
+
+        <p class="mb-3 font-normal text-gray-700">{{ feature.description }}</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,5 @@
+.active {
+  color: #1D4ED8 !important; /* Change la couleur du texte */
+  font-weight: bold; /* Rend le texte en gras */
+  border-bottom: 2px solid #1D4ED8; /* Ajoute un soulignement */
+}

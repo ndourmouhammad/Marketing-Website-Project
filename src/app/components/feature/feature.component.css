@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  #default-carousel {
+      width: 100%;
+      height: auto;
+  }
+  #default-carousel img {
+      max-height: 300px; /* Empêche les images d’être trop grandes */
+  }
+}
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
