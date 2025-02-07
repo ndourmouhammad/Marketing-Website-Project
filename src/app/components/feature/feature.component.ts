@@ -1,9 +1,10 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-feature',
-  imports: [NgFor],
+  imports: [NgFor, FooterComponent],
   templateUrl: './feature.component.html',
   styleUrl: './feature.component.css'
 })

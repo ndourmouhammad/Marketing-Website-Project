@@ -1,1 +1,57 @@
-<p>landing-page works!</p>
+<section class="bg-white dark:bg-gray-900">
+  <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-12">
+
+      <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Découvrez les merveilles cachées du Sénégal</h1>
+      <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">"Teranga Explorer" met en lumière les trésors culturels et naturels du pays. Nous connectons les touristes aux guides locaux pour offrir des expériences authentiques tout en valorisant notre patrimoine.</p>
+      <div class="flex flex-col mb-8 space-y-4 lg:mb-16 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+          <a routerLink="/home" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+              Voir plus
+              <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=TluXx7hJCSM" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+              <svg class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+              Visionnez la vidéo
+          </a>
+      </div>
+
+  </div>
+</section>
+<section class="bg-white dark:bg-gray-900">
+  <div class="items-center max-w-screen-xl gap-16 px-4 py-8 mx-auto lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+      <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+          <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">Célébrons la richesse de la culture sénégalaise</h2>
+          <p class="mb-4">Le Sénégal, terre de traditions et de diversité, dévoile ses trésors culturels à travers ses tenues colorées, ses danses envoûtantes et l'hospitalité légendaire de son peuple. Découvrez des récits uniques, des paysages authentiques et des sourires chaleureux qui incarnent l'esprit vibrant de notre pays.</p>
+
+      </div>
+      <div class="grid grid-cols-2 gap-4 mt-8">
+          <img class="w-full rounded-lg" src="https://img.freepik.com/photos-gratuite/concept-mode-rapide-homme-complet_23-2150805307.jpg?t=st=1738946614~exp=1738950214~hmac=da2a23a95dcee37a47a4f28dc8d9ebe055f333b6aff1505af8ac1c75c9fba6a7&w=1380" alt="office content 1">
+          <img class="w-full mt-4 rounded-lg lg:mt-10" src="https://img.freepik.com/photos-gratuite/femme-costume-carnaval_23-2148825057.jpg?t=st=1738946648~exp=1738950248~hmac=59b5851c796451a790e28d64bad32a5a14c8e05c00a4d30f9521ae03d66a70f8&w=1380" alt="office content 2">
+      </div>
+  </div>
+</section>
+
+<section class="bg-white dark:bg-gray-900">
+  <div class="items-center max-w-screen-xl gap-8 px-4 py-8 mx-auto xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+      <!-- Affiche la section d'inscription si isRegistering est true, sinon affiche la section de connexion -->
+      <app-register *ngIf="isRegistering"></app-register>
+      <app-login *ngIf="!isRegistering"></app-login>
+
+      <div class="mt-4 md:mt-0">
+          <p class="mb-6 text-gray-500 md:text-lg dark:text-gray-400">Rejoignez notre communauté et connectez-vous avec des amis, des familles et des personnes partageant vos intérêts ! Découvrez de nouvelles connexions et partagez des moments ensemble.</p>
+
+          <!-- Lien pour basculer entre inscription et connexion -->
+          <p class="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+            <span *ngIf="isRegistering">
+              Si vous avez déjà un compte, cliquez <span class="text-blue-600" (click)="toggleAuthView()">ici</span> pour vous connecter.
+            </span>
+            <span *ngIf="!isRegistering">
+              Vous n'avez pas encore de compte ? Cliquez <span class="text-blue-600"  (click)="toggleAuthView()">ici</span> pour vous inscrire.
+            </span>
+          </p>
+      </div>
+  </div>
+</section>
+
+<section>
+  <app-footer></app-footer>
+</section>
