@@ -1,4 +1,56 @@
-<p>contact-page works!</p>
+<div class="h-96 md:h-[450px] bg-cover bg-center flex items-center justify-center relative"
+  style="background-image: url('https://img.freepik.com/photos-gratuite/articles-voyage_23-2147637639.jpg?t=st=1739000891~exp=1739004491~hmac=83357e2f04965a6a61ef96a704de8c85bdca282dd1b99d0dc645c0f09c4a4309&w=2000');">
+
+  <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
+
+  <h1 class="text-3xl md:text-5xl font-bold text-white px-6 py-3 rounded-lg backdrop-blur-lg bg-white/10 shadow-lg relative z-10 text-center">
+    Contactez-nous
+  </h1>
+</div>
+
+
+<section>
+  <section class="bg-white dark:bg-gray-900">
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+
+        <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Vous rencontrez un problème technique ? Vous souhaitez partager vos retours sur une fonctionnalité en cours de développement ? Vous avez besoin d'informations sur nos services ou nos offres ? N'hésitez pas à nous contacter, nous sommes là pour vous aider.</p>
+        <form [formGroup]="contactForm" (ngSubmit)="sendEmail($event)" class="space-y-8">
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Adresse email</label>
+                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@exemple.com" formControlName="email">
+                <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="text-red-500 text-sm mt-1">
+                  Une adresse email valide est requise.
+                </div>
+            </div>
+            <div>
+                <label for="nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nom</label>
+                <input type="text" id="nom" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" formControlName="nom" placeholder="Votre nom">
+                <div *ngIf="contactForm.get('nom')?.invalid && contactForm.get('nom')?.touched" class="text-red-500 text-sm mt-1">
+                  Le nom est requis.
+                </div>
+            </div>
+            <div>
+              <label for="prenom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Prénom</label>
+              <input type="text" id="prenom" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" formControlName="prenom" placeholder="Votre prenom">
+              <div *ngIf="contactForm.get('prenom')?.invalid && contactForm.get('prenom')?.touched" class="text-red-500 text-sm mt-1">
+                Le prénom est requis.
+              </div>
+          </div>
+            <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Votre message</label>
+                <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Votre message..." formControlName="message" formControlName="message"></textarea>
+                <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="text-red-500 text-sm mt-1">
+                  Le message est requis.
+                </div>
+            </div>
+            <button type="submit" [disabled]="contactForm.invalid"
+        class="w-full p-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition disabled:bg-gray-400 disabled:cursor-not-allowed">
+        Envoyer
+      </button>
+        </form>
+    </div>
+  </section>
+</section>
 <section>
   <app-footer></app-footer>
 </section>

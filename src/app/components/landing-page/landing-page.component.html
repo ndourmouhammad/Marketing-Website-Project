@@ -30,27 +30,6 @@
   </div>
 </section>
 
-<section class="bg-white dark:bg-gray-900">
-  <div class="items-center max-w-screen-xl gap-8 px-4 py-8 mx-auto xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-      <!-- Affiche la section d'inscription si isRegistering est true, sinon affiche la section de connexion -->
-      <app-register *ngIf="isRegistering"></app-register>
-      <app-login *ngIf="!isRegistering"></app-login>
-
-      <div class="mt-4 md:mt-0">
-          <p class="mb-6 text-gray-500 md:text-lg dark:text-gray-400">Rejoignez notre communauté et connectez-vous avec des amis, des familles et des personnes partageant vos intérêts ! Découvrez de nouvelles connexions et partagez des moments ensemble.</p>
-
-          <!-- Lien pour basculer entre inscription et connexion -->
-          <p class="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-            <span *ngIf="isRegistering">
-              Si vous avez déjà un compte, cliquez <span class="text-blue-600" (click)="toggleAuthView()">ici</span> pour vous connecter.
-            </span>
-            <span *ngIf="!isRegistering">
-              Vous n'avez pas encore de compte ? Cliquez <span class="text-blue-600"  (click)="toggleAuthView()">ici</span> pour vous inscrire.
-            </span>
-          </p>
-      </div>
-  </div>
-</section>
 
 <section>
   <app-footer></app-footer>
