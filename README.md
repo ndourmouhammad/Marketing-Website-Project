@@ -1,14 +1,13 @@
-# Marketing Website Project 🚀
+# Teranga Explorer Project 🚀
 
-Ce projet consiste à créer un site marketing interactif pour un produit technologique, développé avec Angular. Le site met en valeur les caractéristiques du produit, facilite l'inscription des utilisateurs et permet de contacter facilement l'équipe de vente.
+Ce projet consiste à créer un site vitrine pour promouvoir la plateforme "Teranga Explorer", développée avec Angular. Le site met en avant les services proposés par la plateforme, notamment la promotion des sites touristiques méconnus du Sénégal, la mise en relation entre touristes et guides locaux, ainsi que les outils de réservation en ligne. L'objectif est de présenter les fonctionnalités principales, les avantages de la plateforme et inciter les visiteurs à contacter l'équipe pour plus d'informations.
 
 ## 🖍 Fonctionnalités
+- **Landing page** : Une page optimisée pour inciter les utilisateurs à découvrir la plateforme.
 - **Page d'accueil** : Présentation du produit avec des visuels et un aperçu général.  
-- **Pages de fonctionnalités** : Description détaillée des fonctionnalités du produit.  
-- **Landing page** : Une page optimisée pour inciter les utilisateurs à s'inscrire.  
-- **Formulaires interactifs** :  
-  - Formulaire d'inscription.  
-  - Formulaire de contact pour se connecter à l'équipe commerciale.  
+- **Pages de fonctionnalités** : Description détaillée des fonctionnalités du produit.    
+- **Formulaires interactifs** :   
+  - Formulaire de contact pour se connecter à l'équipe.  
 - **Appels à l'action** : Lien "Contactez-nous" accessible sur toutes les pages pour améliorer l'engagement.  
 
 ## 🔧 Technologies utilisées
@@ -16,17 +15,15 @@ Ce projet consiste à créer un site marketing interactif pour un produit techno
 - **Framework CSS** : TailwindCSS  
 - **Langages** : TypeScript, HTML, CSS  
 - **Design** : Utilisation de principes modernes pour un design responsive et intuitif avec TailwindCSS.
-
-## 🌟 Objectifs
-- Promouvoir un produit technologique via un site web moderne.  
-- Simplifier les interactions utilisateur grâce à des formulaires et des appels à l'action clairs.  
+- **emailjs** : Service pour l'envoi d'e-mails directement depuis le site, utilisé pour la fonctionnalité de contact.
+- **sweetalert2** : Bibliothèque utilisée pour afficher des alertes interactives et personnalisées, respectant la charte graphique du projet. 
 
 ## 📅 Planning
 - Développement du projet du 07/02/2025 au 08/02/2025.  
 - Finalisation et tests avant la livraison le 08/02/2025.  
 
 ## 💻 Démo
-
+[Teranga Explorer](https://terangaexplorer.vercel.app/)
 
 ## 📂 Installation et exécution
 1. Clonez ce dépôt :  
