@@ -8,3 +8,8 @@
   color: #1d4ed8; /* Bleu */
   border-bottom: 2px solid #1d4ed8;
 }
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Ajoute un espace entre les éléments */
+}

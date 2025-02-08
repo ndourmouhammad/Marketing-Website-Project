@@ -14,7 +14,7 @@
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
 
         <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Vous rencontrez un problème technique ? Vous souhaitez partager vos retours sur une fonctionnalité en cours de développement ? Vous avez besoin d'informations sur nos services ou nos offres ? N'hésitez pas à nous contacter, nous sommes là pour vous aider.</p>
-        <form [formGroup]="contactForm" (ngSubmit)="sendEmail($event)" class="space-y-8">
+        <form [formGroup]="contactForm" (ngSubmit)="sendEmail($event)" class="space-y-8 contact">
             <div>
                 <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Adresse email</label>
                 <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@exemple.com" formControlName="email">
