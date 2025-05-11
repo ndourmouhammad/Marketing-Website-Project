@@ -4,6 +4,8 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import emailjs from '@emailjs/browser';
 import { NgIf } from '@angular/common';
 import Swal from 'sweetalert2';
+import { environment } from '../../../environments/environment';
+
 
 @Component({
   selector: 'app-contact-page',
@@ -40,10 +42,10 @@ export class ContactPageComponent {
     };
 
     emailjs.send(
-      'service_9tv8duz',
-      'template_gedirnv',
+      environment.emailjs.serviceId,
+      environment.emailjs.templateId,
       formData,
-      { publicKey: '-gdEe9S5r3r4wjq8x' }
+      { publicKey: environment.emailjs.publicKey }
     )
     .then(
       () => {
